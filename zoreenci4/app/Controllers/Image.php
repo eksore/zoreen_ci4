@@ -47,6 +47,8 @@ class Image extends BaseController
                 // }
                 $path ='./uploads/images/manipulated/';
                 $files= $this->request->getFiles();
+
+                
                 // $imageService = \Config\Services::image('imagick');
                 $imageService = service('image');
 
@@ -64,14 +66,10 @@ class Image extends BaseController
                    $data['folders'][]= 'rotate';
                     
                     
-
-                    
                 }
 
                 }
               
-
-
 
             }else{
                 $data ['validation'] = $this-> validator;
